@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #fbf0dc;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* header */
+.page-header {
+  text-align: center;
+}
+
+.page-header h1 {
+  letter-spacing: 0.3em;
+  padding: 0px 0;
+}
+
+.header-center {
+  display: flex;
+  padding: 40px 40px;
+  font-size: 20px;
+  gap: 40px;
+  border-bottom: 1px solid #000;
+}
+
+.header-center a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+/* works grid */
+.works-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px;
+  gap: 80px 60px;
+  position: relative;
+}
+
+/* 縦の仕切り線 */
+.works-grid::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  bottom: 80px;
+  left: 50%;
+  width: 1px;
+  background: #000;
+}
+
+/* card */
+.work-card img {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.work-card h2 {
+  margin: 20px 0 12px;
+  font-size: 20px;
+}
+
+/* tags */
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tags span {
+  border: 1px solid #000;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.tags .dark {
+  background: #1e2f5b;
+  color: #fff;
+  border: none;
+}
+
+/* footer */
+.footer {
+  border-top: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.text-link {
+  text-decoration: none;
+  color: black;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}

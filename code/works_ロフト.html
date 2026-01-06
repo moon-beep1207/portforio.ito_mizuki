@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>WORKS | ロフトアプリリデザイン</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="work_ワンシーレシピ.css">
+</head>
+<body>
+
+<header class="page-header">
+   <nav class="header-center">
+    <a href="home.html">HOME</a>
+    <a href="works.html">WORKS</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+  <h1>WORKS</h1>
+</header>
+
+<section class="work-head">
+  <h2>ロフトアプリリデザイン</h2>
+  <div class="tags">
+    <span>Figma</span>
+    <span class="dark">自主制作</span>
+  </div>
+</section>
+
+<section class="work-hero">
+  <img src="images/ロフト/アプリリデザイン_ロフト_アートボード 1.png" alt="ワンシーレシピ画面">
+</section>
+
+<section class="work-detail">
+
+  <div class="detail-row">
+    <h3>概要</h3>
+    <p>大学のゼミでロフトアプリリデザインを行いました。</p>
+  </div>
+
+  <div class="detail-row">
+    <h3>目的</h3>
+    <p>
+      ユーザーがより快適に、効率的にアプリを利用できるように機能性の向上を目的としました。
+    </p>
+  </div>
+
+  <div class="detail-row">
+    <h3>ターゲット</h3>
+    <p>アプリを使うユーザー。</p>
+  </div>
+
+  <div class="detail-row">
+    <h3>情報設計</h3>
+    <p>
+      ユーザーが探したい情報にすぐアクセスできるように”検索機能の視認性の向上”のほか、
+      色違いの商品を同一ページ内で選択・表示できるように”ページ遷移の見直し”等の機能・
+      デザイン改善を行いました。
+    </p>
+  </div>
+
+  <div class="detail-row">
+    <h3>デザイン</h3>
+    <p>
+     トップページの検索ボタンとアプリIDの位置変更、検索ページと商品ページのホームボタンの位置修正、
+     商品ページのカラーバリエーション機能の追加しました。カラーバリエーション機能については、
+     洋服のECサイトを参考に制作しました。
+    </p>
+  </div>
+
+  <div class="detail-row">
+    <h3>制作範囲</h3>
+    <p>2ヶ月</p>
+  </div>
+
+  <div class="slider-container">
+  <div class="slider-wrapper">
+    <img src="images/ロフト/アプリリデザイン_ロフト_アートボード 1.png" alt="Portfolio 1" class="slide">
+    <img src="images/ロフト/アプリリデザイン_ロフト-02.png" alt="Portfolio 2" class="slide">
+    <img src="images/ロフト/アプリリデザイン_ロフト-03.png" alt="Portfolio 3" class="slide">
+    <img src="images/ロフト/アプリリデザイン_ロフト-04.png" alt="Portfolio 4" class="slide">
+    <img src="images/ロフト/アプリリデザイン_ロフト-05.png" alt="Portfolio 5" class="slide">
+  </div>
+
+  <button class="prev-btn">←</button>
+  <button class="next-btn">→</button>
+</div>
+<script>
+        const wrapper = document.querySelector('.slider-wrapper');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        let counter = 0;
+        
+        // ボタンをクリックした時の動きをここに書く...
+        nextBtn.addEventListener('click', () => {
+            const size = slides[0].clientWidth; // クリック時に幅を再取得すると確実です
+            if (counter >= slides.length - 1) return;
+            counter++;
+            wrapper.style.transform = `translateX(${-size * counter}px)`;
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const size = slides[0].clientWidth;
+            if (counter <= 0) return;
+            counter--;
+            wrapper.style.transform = `translateX(${-size * counter}px) `;
+        });
+    </script>
+  </div>
+
+</section>
+
+<section class="other-works">
+  <h2>OTHER WORKS</h2>
+
+  <div class="other-grid">
+
+    <div class="other-item">
+      <img src="images/ワンシーレシピ/トップ.jpg" alt="">
+      <a href="works_ワンシーレシピ.html" class="text-link"><h3>ワンシーレシピ</h3></a>
+      <div class="tags">
+        <span>Figma</span>
+        <span class="dark">授業課題</span>
+      </div>
+      <p>SNSに掲載されているレシピ動画をひとつのアプリで見れるサービスを制作しました。</p>
+    </div>
+
+    <div class="other-item">
+      <img src="images/ロフト/アプリリデザイン_ロフト_アートボード 1.png" alt="ロフトアプリ　リデザイン">
+      <a href="works_ロフト.html" class="text-link"><h3>ロフトアプリ　リデザイン</h3></a>
+      <div class="tags">
+        <span>Figma</span>
+        <span>Illustrator</span>
+        <span class="dark">自主制作</span>
+      </div>
+      <p>ゼミでロフトのアプリUIをデザインしました。</p>
+    </div>
+
+    <div class="other-item">
+      <img src="images/タウンワーク/トップページ.png" alt="タウンワークアプリデザイン">
+      <a href="work_タウンワーク.html" class="text-link"><h3>タウンワークアプリ　リデザイン</h3></a>
+      <div class="tags">
+        <span>Figma</span>
+        <span class="dark">自主制作</span>
+      </div>
+      <p>ゼミでタウンワークのアプリUIをデザインしました。</p>
+    </div>
+
+    <div class="other-item">
+      <img src="images/ネイリー/トップページ.png" alt="ネイリーアプリデザイン">
+      <a href="work_ネイリー.html" class="text-link"><h3>ネイリーアプリ　リデザイン</h3></a>
+      <div class="tags">
+        <span>Figma</span>
+        <span class="dark">自主制作</span>
+      </div>
+      <p>ゼミでネイリーのアプリUIをデザインしました。</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <nav>
+    <a href="home.html">HOME</a>
+    <a href="works.html">WORKS</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+</footer>
+
+</body>
+</html>

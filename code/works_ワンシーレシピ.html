@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>WORKS | ワンシーレシピ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="work_ワンシーレシピ.css">
+</head>
+<body>
+
+<header class="page-header">
+   <nav class="header-center">
+    <a href="home.html">HOME</a>
+    <a href="works.html">WORKS</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+  <h1>WORKS</h1>
+</header>
+
+<section class="work-head">
+  <h2>ワンシーレシピ</h2>
+  <div class="tags">
+    <span>Figma</span>
+    <span class="dark">授業課題</span>
+  </div>
+</section>
+
+<section class="work-hero">
+  <img src="images/ワンシーレシピ/トップ.jpg" alt="ワンシーレシピ画面">
+</section>
+
+<section class="work-detail">
+
+  <div class="detail-row">
+    <h3>概要</h3>
+    <p>大学の授業内で新しいサービスを企画から制作まで行いました。</p>
+  </div>
+
+  <div class="detail-row">
+    <h3>目的</h3>
+    <p>
+      忙しい人に向けて時短レシピの提供を目的として制作しました。
+      また、栄養に偏りが出ないようにAIを活用して栄養のバランスや
+      一週間の献立を提供できるようなサービスを制作しました。
+    </p>
+  </div>
+
+  <div class="detail-row">
+    <h3>ターゲット</h3>
+    <p>主婦層、一人暮らしをしている男女、料理初心者の方。</p>
+  </div>
+
+  <div class="detail-row">
+    <h3>情報設計</h3>
+    <p>
+      ユーザーが操作しやすいようにフッターにグローバルメニューを配置しました。
+      これを置くことで導線の迷いが少なくなると考えました。
+    </p>
+  </div>
+
+  <div class="detail-row">
+    <h3>デザイン</h3>
+    <p>
+      レシピアプリであることを親しみやすさを持ってもらいたいことから、
+      基本カラーを暖色に設定しました。
+      このサービスは短い動画を提供しているため、
+      SNSでよく使用されている画面構造を意識して制作しました。
+    </p>
+  </div>
+
+  <div class="detail-row">
+    <h3>制作範囲</h3>
+    <p>3ヶ月</p>
+  </div>
+
+  <div class="slider-container">
+  <div class="slider-wrapper">
+    <img src="images/ワンシーレシピ/トップ.jpg" alt="Portfolio 1" class="slide">
+    <img src="images/ワンシーレシピ/サービスの概要.jpg" alt="Portfolio 2" class="slide">
+    <img src="images/ワンシーレシピ/立案背景.jpg" alt="Portfolio 3" class="slide">
+    <img src="images/ワンシーレシピ/内容決定の背景.jpg" alt="Portfolio 4" class="slide">
+    <img src="images/ワンシーレシピ/機能説明_1.jpg" alt="Portfolio 5" class="slide">
+    <img src="images/ワンシーレシピ/機能説明_2.jpg" alt="Portfolio 6" class="slide">
+    <img src="images/ワンシーレシピ/機能説明_3.jpg" alt="Portfolio 7" class="slide">
+    <img src="images/ワンシーレシピ/ビジネスモデル.jpg" alt="Portfolio 8" class="slide">
+    <img src="images/ワンシーレシピ/プロモーション.jpg" alt="Portfolio 9" class="slide">
+  </div>
+
+  <button class="prev-btn">←</button>
+  <button class="next-btn">→</button>
+</div>
+<script>
+        const wrapper = document.querySelector('.slider-wrapper');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        let counter = 0;
+        
+        // ボタンをクリックした時の動きをここに書く...
+        nextBtn.addEventListener('click', () => {
+            const size = slides[0].clientWidth; // クリック時に幅を再取得すると確実です
+            if (counter >= slides.length - 1) return;
+            counter++;
+            wrapper.style.transform = `translateX(${-size * counter}px)`;
+        });
+
+        prevBtn.addEventListener('click', () => {
+            const size = slides[0].clientWidth;
+            if (counter <= 0) return;
+            counter--;
+            wrapper.style.transform = `translateX(${-size * counter}px) `;
+        });
+    </script>
+  </div>
+
+</section>
+
+<section class="other-works">
+  <h2>OTHER WORKS</h2>
+
+  <div class="other-grid">
+
+    <div class="other-item">
+      <img src="images/ワンシーレシピ/トップ.jpg" alt="">
+      <a href="works_ワンシーレシピ.html" class="text-link"><h3>ワンシーレシピ</h3></a>
+      <div class="tags">
+        <span>Figma</span>
+        <span class="dark">授業課題</span>
+      </div>
+      <p>SNSに掲載されているレシピ動画をひとつのアプリで見れるサービスを制作しました。</p>
+    </div>
+
+    <div class="other-item">
+      <img src="images/ロフト/アプリリデザイン_ロフト_アートボード 1.png" alt="ロフト">
+      <a href="works_ロフト.html" class="text-link"><h3>ロフトアプリ　リデザイン</h3></a>
+      <div class="tags">
+        <span>Figma</span>
+        <span>Illustrator</span>
+        <span class="dark">自主制作</span>
+      </div>
+      <p>ゼミでロフトのアプリUIをデザインしました。</p>
+    </div>
+
+    <div class="other-item">
+      <img src="images/タウンワーク/トップページ.png" alt="タウンワーク">
+      <a href="work_タウンワーク.html" class="text-link"><h3>タウンワークアプリ　リデザイン</h3></a>
+      <div class="tags">
+        <span>Figma</span>
+        <span class="dark">自主制作</span>
+      </div>
+      <p>ゼミでタウンワークのアプリUIをデザインしました。</p>
+    </div>
+
+    <div class="other-item">
+      <img src="images/ネイリー/トップページ.png" alt="ネイリー">
+      <a href="work_ネイリー.html" class="text-link"><h3>ネイリーアプリ　リデザイン</h3></a>
+      <div class="tags">
+        <span>Figma</span>
+        <span class="dark">自主制作</span>
+      </div>
+      <p>ゼミでネイリーのアプリUIをデザインしました。</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <nav>
+    <a href="home.html">HOME</a>
+    <a href="works.html">WORKS</a>
+    <a href="about.html">ABOUT</a>
+  </nav>
+</footer>
+
+</body>
+</html>

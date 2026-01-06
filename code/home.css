@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #fbf0dc;
+  color: #333;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.header-center {
+  display: flex;
+  padding: 40px 0px;
+  gap: 40px;
+}
+
+.header-center a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+
+/* hero */
+.hero {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero-box {
+  display: inline-block;
+  border: 3px solid #000;
+  padding: 40px 100px;
+  margin-bottom: 40px;
+}
+
+.hero-box h1 {
+  letter-spacing: 0em;
+  margin: 0;
+}
+
+.hero-box .sub {
+  margin: 8px 0;
+}
+
+.hero-box .line {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #000;
+  margin: 16px auto 0;
+}
+
+.hero-image img {
+  width: 70%;
+  max-width: 600px;
+  border: 3px solid #000;
+  padding: 40px 40px;
+}
+
+/* section title */
+.section-title {
+  display: flex;
+  align-items: center;
+  margin: 80px 0 40px;
+}
+
+.section-title h2 {
+  margin: 0 20px;
+  letter-spacing: 0.3em;
+}
+
+.section-title span {
+  flex: 1;
+  height: 1px;
+  background: #000;
+}
+
+/* works */
+.works {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  padding: 0 80px;
+}
+
+.work-item img {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.work-item h3 {
+  margin: 16px 0 8px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.tags span {
+  border: 1px solid #000;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.tags .dark {
+  background: #1e2f5b;
+  color: #fff;
+  border: none;
+}
+
+.more {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.more button {
+  background: #1e2f5b;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 20px;
+}
+
+/* about */
+.about {
+  display: flex;
+  gap: 40px;
+  padding: 0 80px 80px;
+}
+
+.about-image {
+  width: 40%;
+  height: 280px;
+  background: #ddd;
+}
+
+.about-text {
+  width: 60%;
+}
+
+.about-text h3 span {
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.view-more {
+  margin-top: 20px;
+  background: #1e2f5b;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 20px;
+}
+
+/* footer */
+.footer {
+  border-top: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.text-link {
+  text-decoration: none;
+  color: black;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}

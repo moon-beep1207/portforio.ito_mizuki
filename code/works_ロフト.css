@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background: #fdf1df;
+  color: #333;
+}
+
+.page-title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.work-detail {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.work-header h2 {
+  font-size: 22px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags li {
+  border: 1px solid #333;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.tags .primary {
+  background: #1e2f5b;
+  color: #fff;
+  border: none;
+}
+
+.main-visual img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.work-info dl {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  row-gap: 20px;
+}
+
+.work-info dt {
+  font-weight: bold;
+}
+
+.other-works {
+  margin: 80px 0;
+}
+
+.other-works h3 {
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.work-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-card img {
+  width: 100%;
+}
+
+.work-title {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  border: 1px solid #333;
+  padding: 6px 14px;
+  border-radius: 20px;
+  color: #333;
+}
+
